@@ -25,7 +25,6 @@ const SearchComponent = ({
           </span>
         </div>
       </div>
-      {error && <p>{error}</p>}
     </React.Fragment>
   );
 };

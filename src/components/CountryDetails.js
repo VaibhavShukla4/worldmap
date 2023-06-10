@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountryDetails = ({ countryData }) => {
+const CountryDetails = ({ countryData, error }) => {
   return (
     <div className="w-2/5 med:w-full">
       {countryData && (
@@ -58,6 +58,9 @@ const CountryDetails = ({ countryData }) => {
           </div>
         </div>
       )}
+      <div className="flex justify-center items-center h-full">
+        {error && <p className="text-red-500 text-2xl font-bold">{error}</p>}
+      </div>
     </div>
   );
 };
