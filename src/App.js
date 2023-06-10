@@ -24,7 +24,7 @@ function App() {
       })
       .catch((error) => {
         console.log("Error fetching country data:", error);
-        setError("Error fetching country data");
+        setError("Error fetching country data!");
       });
   };
   return (
@@ -39,7 +39,7 @@ function App() {
         />
         <div className="flex med:flex med:flex-col ">
           <MapWrapper />
-          <CountryDetails countryData={countryData} />
+          <CountryDetails countryData={countryData} error={error} />
         </div>
       </div>
     </div>
