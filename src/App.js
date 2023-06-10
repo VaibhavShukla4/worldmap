@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { searchCountry } from "./Api/countryData";
 import CountryDetails from "./components/CountryDetails";
 import MapWrapper from "./components/MapWrapper";
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [countryData, setCountryData] = useState(null);
