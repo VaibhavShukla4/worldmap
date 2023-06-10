@@ -9,7 +9,6 @@ import icon from "./constant";
 
 // Cordinates of Marcillac
 const center = [45.269169177925754, -0.5231516014256281];
-const purpleOptions = { color: "white" };
 
 function LeafletgeoSearch() {
   const map = useMap();
